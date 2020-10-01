@@ -7,10 +7,92 @@
 </head>
 <body>
     <style>
+        html {
+            background: blue;
+        }
         body {
             margin: 0;
+            color: blue;
+            font-family: sans-serif;
+        }
+        img {
+            max-width: 900px;
+            box-shadow: -5px 10px 30px 9px rgba(0,0,0,0.35);
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+        a {
+            color: inherit;
+        }
+        .text {
+            /* text-align: center; */
+            color: white;
+            padding: 0 2em;
+            background: blue;
+            position: relative;
+        }
+        img {
+            position: absolute;
+            top: 30px;
+            left: 10vw;
+            width: 300px;
+            transform: rotate(3deg);
         }
     </style>
-    <img src="/assets/images/block.svg" alt="">
+    <main>
+        <div class="text">
+            <h1>
+               Blue Balls Pastis Bar 
+            </h1>
+            <hr>
+            <h2>
+                June – August 2021<br>
+                Tuesdays & Thursdays<br>
+                from 8pm–12am
+            </h2>
+            <hr>
+            <p>
+                Every Tuesday: <br>at <a href="https://pinavienna.eu">Pina</a>, Große Neugasse 44, 1040 Vienna, AT
+            </p>
+            <p>
+                Every Thursday: <br> at <a href="https://giannimanhattan.com">Gianni Manhattan</a>, Wassergasse 14, 1030 Vienna, AT
+            </p>
+
+            <hr>
+
+            <h2>
+                Pastis
+            </h2>
+                <ul>
+                    <li>Henri Bardouin — € 3</li>
+                    <li>P'tit Bleu – € 3,50</li>
+                </ul>
+
+            <h2>
+                Alcoholic Drinks
+            </h2>
+                <ul>
+                    <li>Beer – € 2,50</li>
+                    <li>Crémant – € 3</li>
+                </ul>
+
+            <h2>
+                Non-Alcoholic Drinks
+            </h2>
+                <ul>
+                    <li>Vöslauer – € 1</li>
+                    <li>Pink Soda – € 2,50</li>
+                </ul>
+            <hr>
+            <h1>
+                🥂
+            </h1>
+        </div>
+        <div class="text">
+            <img src="/assets/images/block.svg" alt="" style="background: white">
+        </div>
+    </main>
 </body>
 </html>
